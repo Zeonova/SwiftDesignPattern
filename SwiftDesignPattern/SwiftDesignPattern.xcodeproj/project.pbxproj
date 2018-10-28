@@ -11,6 +11,8 @@
 		721DDE7821845AB400F64772 /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721DDE7721845AB400F64772 /* Prototype.swift */; };
 		721DDE7A21846B3A00F64772 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721DDE7921846B3A00F64772 /* Factory.swift */; };
 		721DDE7C2184810300F64772 /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721DDE7B2184810300F64772 /* AbstractFactory.swift */; };
+		721DDE7E2186044600F64772 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721DDE7D2186044600F64772 /* Builder.swift */; };
+		72A7468221861828009B3094 /* SingletonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A7468121861828009B3094 /* SingletonClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,8 @@
 		721DDE7721845AB400F64772 /* Prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototype.swift; sourceTree = "<group>"; };
 		721DDE7921846B3A00F64772 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		721DDE7B2184810300F64772 /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
+		721DDE7D2186044600F64772 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		72A7468121861828009B3094 /* SingletonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				721DDE7721845AB400F64772 /* Prototype.swift */,
 				721DDE7921846B3A00F64772 /* Factory.swift */,
 				721DDE7B2184810300F64772 /* AbstractFactory.swift */,
+				721DDE7D2186044600F64772 /* Builder.swift */,
+				72A7468121861828009B3094 /* SingletonClass.swift */,
 			);
 			path = SwiftDesignPattern;
 			sourceTree = "<group>";
@@ -132,6 +138,8 @@
 				721DDE7821845AB400F64772 /* Prototype.swift in Sources */,
 				721DDE7A21846B3A00F64772 /* Factory.swift in Sources */,
 				721DDE712183504B00F64772 /* main.swift in Sources */,
+				721DDE7E2186044600F64772 /* Builder.swift in Sources */,
+				72A7468221861828009B3094 /* SingletonClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
