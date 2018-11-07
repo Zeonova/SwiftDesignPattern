@@ -7,6 +7,7 @@
 //
 // 单例模式，保证一个类仅有一个实例，并提供一个访问它的全局访问点
 // 私有init以保证无法新生成,也让子类无法重写
+// 也可以用final关键字来将类修饰为无法继承
 
 import Foundation
 
@@ -16,7 +17,7 @@ class SingletonObject:CustomDebugStringConvertible {
     }
     var data:Int = 0
     static let sharedInstance = SingletonObject()
-    private init(){}  
+    private init(){}
 }
 
 

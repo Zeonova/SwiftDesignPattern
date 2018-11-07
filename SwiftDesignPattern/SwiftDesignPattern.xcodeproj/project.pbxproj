@@ -12,6 +12,7 @@
 		721DDE7A21846B3A00F64772 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721DDE7921846B3A00F64772 /* Factory.swift */; };
 		721DDE7C2184810300F64772 /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721DDE7B2184810300F64772 /* AbstractFactory.swift */; };
 		721DDE7E2186044600F64772 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721DDE7D2186044600F64772 /* Builder.swift */; };
+		7243AA39219327EF00017CAA /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243AA38219327EF00017CAA /* Adapter.swift */; };
 		72A7468221861828009B3094 /* SingletonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A7468121861828009B3094 /* SingletonClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		721DDE7921846B3A00F64772 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		721DDE7B2184810300F64772 /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		721DDE7D2186044600F64772 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		7243AA38219327EF00017CAA /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		72A7468121861828009B3094 /* SingletonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 				721DDE7B2184810300F64772 /* AbstractFactory.swift */,
 				721DDE7D2186044600F64772 /* Builder.swift */,
 				72A7468121861828009B3094 /* SingletonClass.swift */,
+				7243AA38219327EF00017CAA /* Adapter.swift */,
 			);
 			path = SwiftDesignPattern;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				721DDE712183504B00F64772 /* main.swift in Sources */,
 				721DDE7E2186044600F64772 /* Builder.swift in Sources */,
 				72A7468221861828009B3094 /* SingletonClass.swift in Sources */,
+				7243AA39219327EF00017CAA /* Adapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

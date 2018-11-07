@@ -41,6 +41,7 @@ func builderTest(){
     let materia = Material()
     let build = materia.get()
     build.hello()
+    
     materia.money = 1000
     materia.rank = 6
     materia.get().hello()
@@ -48,6 +49,7 @@ func builderTest(){
     materia.money = 100000000
     materia.rank = 1
     materia.get().hello()
+
 }
 
 func singletonTest(){
@@ -78,7 +80,19 @@ func singletonTest(){
     }
 }
 
+
+func AdapterTest(){
+    let a = Adapter()
+    a.type = 1
+    a.hello()
+    a.work()
+    a.sleep()
+}
+
+AdapterTest()
+
 func runloopTest(){
+    // 命令行模式下，需要启动一个runloop才可以保护多线程
     let runLoop = CFRunLoopGetCurrent();
     let runLoopMode = CFRunLoopMode.defaultMode;
     let observer = CFRunLoopObserverCreateWithHandler(kCFAllocatorDefault,
@@ -89,3 +103,6 @@ func runloopTest(){
     CFRunLoopAddObserver(runLoop, observer, runLoopMode);
     CFRunLoopRun()
 }
+
+
+
