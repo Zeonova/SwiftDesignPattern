@@ -24,17 +24,22 @@ func protypeTest(){
 
 
 func factoryTest(){
-    let t = SuperClass()
-    t.doSomething()
-    let f = SuperClass.loadSubClass(subclass: SubclassA.self)
-    f!.doSomething()
+    let p = ConcreteFactory.creatFor(subclass: ConcreteProduct.self)
+    p?.use()
 }
 
 func absFactoryTest(){
-    let asbSuperClass =  AbstractSuperClass.loadSubClasForSuperType(subclass: SubAbsClassA.self)
-    let asbSuperOtherClass =  AbstractSuperClass.loadSubClasForSuperType(subclass: SubAbsClassB.self)
-    asbSuperClass?.doit()
-    asbSuperOtherClass?.doit()
+    
+    let f = AbstractFactory.creatFactory(subclass: ConcreteFactoryMu.self)
+    let fa = f?.creatAlpha()
+    fa?.alpha()
+    
+    
+    
+    let t = AbstractFactory.creatFactory(subclass: ConcreteFactoryNu.self)
+    let tb = t?.creatBeta()
+    tb?.beta()
+    
 }
 
 func builderTest(){
@@ -89,7 +94,6 @@ func AdapterTest(){
     a.sleep()
 }
 
-AdapterTest()
 
 func runloopTest(){
     // 命令行模式下，需要启动一个runloop才可以保护多线程
@@ -104,5 +108,9 @@ func runloopTest(){
     CFRunLoopRun()
 }
 
+
+
+
+absFactoryTest()
 
 
