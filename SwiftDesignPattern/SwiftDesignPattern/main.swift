@@ -43,18 +43,8 @@ func absFactoryTest(){
 }
 
 func builderTest(){
-    let materia = Material()
-    let build = materia.get()
-    build.hello()
-    
-    materia.money = 1000
-    materia.rank = 6
-    materia.get().hello()
-    materia.type = 1
-    materia.money = 100000000
-    materia.rank = 1
-    materia.get().hello()
-
+    let p = Director(BlackBuilder()).construct()
+    p.show()
 }
 
 func singletonTest(){
@@ -86,13 +76,11 @@ func singletonTest(){
 }
 
 
-func AdapterTest(){
-    let a = Adapter()
-    a.type = 1
-    a.hello()
-    a.work()
-    a.sleep()
+func adapterTest(){
+    let a = Adapter(adaptee: Adaptee())
+    a.request()
 }
+
 
 
 func runloopTest(){
@@ -111,6 +99,5 @@ func runloopTest(){
 
 
 
-absFactoryTest()
 
 
