@@ -34,11 +34,11 @@ class CharDisplay: AbstractClass {
     }
     
     func open() {
-        Swift.print("<<")
+        Swift.print("<<",terminator:"")
     }
     
     func print() {
-        Swift.print(ch)
+        Swift.print(ch,terminator:"")
     }
     
     func close() {

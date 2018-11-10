@@ -117,6 +117,5 @@ func templateMethodTest() {
     t.display()
 }
 
-templateMethodTest()
 
 

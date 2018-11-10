@@ -74,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				721DDE702183504B00F64772 /* main.swift */,
-				721DDE7721845AB400F64772 /* Prototype.swift */,
 				7243AA3A2195643900017CAA /* CreationalPattern */,
 				7243AA3B219564E600017CAA /* StructuralPattern */,
 				7243AA3C21971AF700017CAA /* BehavioralPattern */,
@@ -85,6 +84,7 @@
 		7243AA3A2195643900017CAA /* CreationalPattern */ = {
 			isa = PBXGroup;
 			children = (
+				721DDE7721845AB400F64772 /* Prototype.swift */,
 				721DDE7921846B3A00F64772 /* Factory.swift */,
 				721DDE7B2184810300F64772 /* AbstractFactory.swift */,
 				721DDE7D2186044600F64772 /* Builder.swift */,
