@@ -29,7 +29,12 @@ class Adapter:AbsTarget {
         self.adaptee.specificRequest()
     }
 }
-
+// 适配器 类适配器
+class AdapterII: Adaptee,AbsTarget {
+    func request() {
+        specificRequest()
+    }
+}
 // 被适配者
 class Adaptee {
     func specificRequest(){

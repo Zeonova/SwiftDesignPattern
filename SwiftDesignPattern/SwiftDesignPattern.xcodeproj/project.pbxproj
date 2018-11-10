@@ -14,6 +14,7 @@
 		721DDE7E2186044600F64772 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721DDE7D2186044600F64772 /* Builder.swift */; };
 		7243AA39219327EF00017CAA /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243AA38219327EF00017CAA /* Adapter.swift */; };
 		7243AA3E21971B3A00017CAA /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243AA3D21971B3A00017CAA /* Iterator.swift */; };
+		7243AA4021972F6F00017CAA /* TemplateMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243AA3F21972F6F00017CAA /* TemplateMethod.swift */; };
 		72A7468221861828009B3094 /* SingletonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A7468121861828009B3094 /* SingletonClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		721DDE7D2186044600F64772 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		7243AA38219327EF00017CAA /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		7243AA3D21971B3A00017CAA /* Iterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
+		7243AA3F21972F6F00017CAA /* TemplateMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMethod.swift; sourceTree = "<group>"; };
 		72A7468121861828009B3094 /* SingletonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				7243AA3D21971B3A00017CAA /* Iterator.swift */,
+				7243AA3F21972F6F00017CAA /* TemplateMethod.swift */,
 			);
 			path = BehavioralPattern;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				721DDE712183504B00F64772 /* main.swift in Sources */,
 				721DDE7E2186044600F64772 /* Builder.swift in Sources */,
 				72A7468221861828009B3094 /* SingletonClass.swift in Sources */,
+				7243AA4021972F6F00017CAA /* TemplateMethod.swift in Sources */,
 				7243AA39219327EF00017CAA /* Adapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

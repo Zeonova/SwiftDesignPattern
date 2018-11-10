@@ -112,5 +112,11 @@ func iteratorTest() {
 }
 
 
+func templateMethodTest() {
+    let t = CharDisplay("H")
+    t.display()
+}
+
+templateMethodTest()
 
 
