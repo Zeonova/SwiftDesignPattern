@@ -96,7 +96,20 @@ func runloopTest(){
     CFRunLoopRun()
 }
 
+func iteratorTest() {
+    let t = ItemSet()
+    t.appendItem(i: Item("Alpha"))
+    t.appendItem(i: Item("Beta"))
+    t.appendItem(i: Item("Mu"))
+    t.appendItem(i: Item("Nu"))
+    
+    let i = t.iterator
+    while i.hasNext() {
+        let t = i.next() as! Item
+        print(t.getName())
+    }
 
+}
 
 
 
