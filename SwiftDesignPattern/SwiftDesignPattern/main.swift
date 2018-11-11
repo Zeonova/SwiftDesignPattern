@@ -30,15 +30,36 @@ func factoryTest(){
 
 
 func absFactoryTest(){
-    
-    let f = AbstractFactory().creatFactory(subclass: ConcreteFactoryMu.self)
-    let fa = f?.creatAlpha()
-    fa?.alpha()
-    
-    let t = AbstractFactory().creatFactory(subclass: ConcreteFactoryNu.self)
-    let tb = t?.creatBeta()
-    tb?.beta()
-    
+    if let listFactory = AbstractFactory.creatFactory(subclass: ListFactory.self) {
+        
+        let people = listFactory.createLink(caption: "人民日报", url: "http://www.people.com.cn/");
+        let gmw = listFactory.createLink(caption: "光明日报", url: "http://www.gmw.cn/");
+        let us_yahoo = listFactory.createLink(caption: "Yahoo!", url: "http://www.yahoo.com/");
+        let jp_yahoo = listFactory.createLink(caption: "Yahoo!Japan", url: "http://www.yahoo.co.jp/");
+        let excite = listFactory.createLink(caption: "Excite", url: "http://www.excite.com/");
+        let google = listFactory.createLink(caption: "Google", url: "http://www.google.com/");
+        
+        
+        let traynews = listFactory.createTray(caption: "日报");
+        traynews.add(people)
+        traynews.add(people);
+        traynews.add(gmw);
+        
+        let trayyahoo = listFactory.createTray(caption: "Yahoo!");
+        trayyahoo.add(us_yahoo);
+        trayyahoo.add(jp_yahoo);
+        
+        let traysearch = listFactory.createTray(caption: "检索引擎");
+        traysearch.add(trayyahoo);
+        traysearch.add(excite);
+        traysearch.add(google);
+        
+        let page = listFactory.createPage(title: "LinkPage", author: "杨文轩");
+        page.add(traynews);
+        page.add(traysearch);
+        page.output();
+        
+    }
 }
 
 func builderTest(){
@@ -107,7 +128,7 @@ func iteratorTest() {
         let t = i.next() as! Item
         print(t.getName())
     }
-
+    
 }
 
 

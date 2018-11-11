@@ -17,6 +17,9 @@ protocol AbstractClass{
     func close()
 }
 extension AbstractClass{
+    /// 需要注意如果采用 extension
+    /// 如果遵循协议的一级类没有实现过该方法，那么一级类的子类会无法正确的重写该方法
+    /// 参考bug文件内例子
     func display() {
         open()
         for _ in 0..<5 {
@@ -25,7 +28,6 @@ extension AbstractClass{
         close()
     }
 }
-
 
 class CharDisplay: AbstractClass {
     var ch:String
