@@ -28,6 +28,7 @@ func factoryTest(){
     p?.use()
 }
 
+
 func absFactoryTest(){
     
     let f = AbstractFactory.creatFactory(subclass: ConcreteFactoryMu.self)

@@ -21,19 +21,23 @@ class AbstractProduct {
     required init() {
         
     }
-    func use(){
-        
-    }
+}
+protocol AbstractProductMethod {
+    func use()
+}
+protocol AbstractFactoryProtocol {
+    static func creatFor<T:AbstractProduct>(subclass:T.Type) -> T? where T :AbstractProductMethod
 }
 
-class ConcreteFactory {
-    static func creatFor<T:AbstractProduct>(subclass:T.Type) -> T? {
-        return T()
-    }
-}
 
-class ConcreteProduct: AbstractProduct {
-    override func use() {
+class ConcreteFactory: AbstractFactoryProtocol {
+    static func creatFor<T>(subclass: T.Type) -> T? where T : AbstractProduct, T : AbstractProductMethod {
+        return subclass.init()
+    }
+    
+}
+class ConcreteProduct: AbstractProduct,AbstractProductMethod {
+    func use() {
         print("---------->> \(self).\(#function)<<---------")
     }
 }
