@@ -31,13 +31,11 @@ func factoryTest(){
 
 func absFactoryTest(){
     
-    let f = AbstractFactory.creatFactory(subclass: ConcreteFactoryMu.self)
+    let f = AbstractFactory().creatFactory(subclass: ConcreteFactoryMu.self)
     let fa = f?.creatAlpha()
     fa?.alpha()
     
-    
-    
-    let t = AbstractFactory.creatFactory(subclass: ConcreteFactoryNu.self)
+    let t = AbstractFactory().creatFactory(subclass: ConcreteFactoryNu.self)
     let tb = t?.creatBeta()
     tb?.beta()
     

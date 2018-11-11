@@ -27,18 +27,18 @@ protocol AbstractProductBetaProtocol {
     var name:String { get set }
     func beta()
 }
-
-
 class AbstractFactory {
-    static func creatFactory(subclass:ConcreteFactoryMu.Type) -> ConcreteFactoryMu? {
-        return ConcreteFactoryMu()
+    required init() {
     }
-    static func creatFactory(subclass:ConcreteFactoryNu.Type) -> ConcreteFactoryNu? {
-        return ConcreteFactoryNu()
+    final func creatFactory<T>(subclass: T.Type) -> T? where T : AbstractFactory, T : AbstractFactoryOmegaProtocol {
+        return subclass.init()
     }
 }
 
-class ConcreteFactoryMu: AbstractFactoryOmegaProtocol {
+
+
+
+class ConcreteFactoryMu:AbstractFactory, AbstractFactoryOmegaProtocol {
     
     var t = "<MU>"
     func creatAlpha() -> AbstractProductAlphaProtocol {
@@ -52,7 +52,7 @@ class ConcreteFactoryMu: AbstractFactoryOmegaProtocol {
     
 }
 
-class ConcreteFactoryNu: AbstractFactoryOmegaProtocol {
+class ConcreteFactoryNu:AbstractFactory, AbstractFactoryOmegaProtocol {
     
     func creatAlpha() -> AbstractProductAlphaProtocol {
         return ProductAlpha_A("Nu-A")
