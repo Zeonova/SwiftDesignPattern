@@ -29,7 +29,7 @@ extension AbstractClass{
     }
 }
 
-class CharDisplay: AbstractClass {
+final class CharDisplay: AbstractClass {
     var ch:String
     init(_ c:String) {
         ch = c
