@@ -18,12 +18,11 @@ class Role{
         print("\(String(describing: name)). \(String(describing: sex)). \(String(describing: skinColour))")
     }
 }
-
 protocol AbstractBuilder {
     var role:Role{ get set }
-    func buiderName()
-    func buiderSex()
-    func buiderSkinColour()
+    func buiderName(name:String)
+    func buiderSex(type:Int)
+    func buiderSkinColour(hexString:String)
     func getRole() -> Role
 }
 class Director {
@@ -32,9 +31,9 @@ class Director {
         self.buider = buider
     }
     func construct() -> Role {
-        buider.buiderName()
-        buider.buiderSex()
-        buider.buiderSkinColour()
+        buider.buiderName(name: "hello")
+        buider.buiderSex(type: 0)
+        buider.buiderSkinColour(hexString: "black")
         return buider.getRole()
     }
 }
@@ -44,18 +43,21 @@ class BlackBuilder: AbstractBuilder {
     init() {
         self.role = Role()
     }
-    func buiderName() {
-        role.name = "Jack Ma"
+    func buiderName(name: String) {
+        self.role.name = name.uppercased()
     }
     
-    func buiderSex() {
-        role.sex = "man"
+    func buiderSex(type: Int) {
+        if type == 0 {
+            self.role.sex = "man"
+        }else{
+            self.role.sex = "women"
+        }
     }
     
-    func buiderSkinColour() {
-        role.skinColour = "Black"
+    func buiderSkinColour(hexString: String) {
+        self.role.skinColour = hexString.uppercased()
     }
-    
     func getRole() -> Role {
         return self.role
     }
