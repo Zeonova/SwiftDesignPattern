@@ -138,4 +138,54 @@ func templateMethodTest() {
 }
 
 
+func bridgeTest()  {
+    let d1 = Display(StringDisplayImpl("Hello boy"))
+    let d2 = CountDisplay(StringDisplayImpl("Hello countDisplay"))
+    
+    d1.display()
+    d2.display()
+    d2.multiDisplay(times: 5)
+    
+}
 
+
+func strategyTest() {
+    let play1 = Player(name: "Leo", strategy: IdiotStrategy())
+    let play2 = Player(name: "Ada", strategy: WinningStrategy())
+    
+    for _ in 0..<10000 {
+        let h1 = play1.nextHand()
+        let h2 = play2.nextHand()
+        
+        if h1.isStrongerThan(h: h2){
+            play1.win()
+            play2.lose()
+        }else if h1.isWeakerThan(h: h2){
+            play1.lose()
+            play2.win()
+        }else{
+            play1.even()
+            play2.even()
+        }
+    }
+    print("Total:")
+    print(play1.toString())
+    print(play2.toString())
+    
+    /*
+     WinningStrategy ProbStrategy
+     Total:
+     [Leo:10000 games, 3126win 3537lose]
+     [Ada:10000 games, 3537win 3126lose]
+     
+     IdiotStrategy ProbStrategy
+     Total:
+     [Leo:10000 games, 22win 9880lose]
+     [Ada:10000 games, 9880win 22lose]
+     
+     IdiotStrategy WinningStrategy
+     Total:
+     [Leo:10000 games, 2win 9998lose]
+     [Ada:10000 games, 9998win 2lose]
+     */
+}
