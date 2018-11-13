@@ -189,3 +189,39 @@ func strategyTest() {
      [Ada:10000 games, 9998win 2lose]
      */
 }
+
+
+func compositeTest() {
+    let rootdir = Directory("root")
+    let bindir = Directory("bin")
+    let tmpdir = Directory("tmp")
+    let usrdir = Directory("usr")
+    rootdir.add(bindir)
+    rootdir.add(tmpdir)
+    rootdir.add(usrdir)
+    bindir.add(File("vi", size: 10000))
+    bindir.add(File("latex", size: 20000))
+    rootdir.printList();
+    
+    print("Making user entries...")
+    
+    let yuki = Directory("yuki")
+    let hanako = Directory("hanako")
+    let tomura = Directory("tomura")
+
+    usrdir.add(yuki)
+    usrdir.add(hanako)
+    usrdir.add(tomura)
+    yuki.add(File("diary.html", size: 100))
+    yuki.add(File("Composite.java", size: 200));
+    hanako.add(File("memo.tex", size: 300));
+    tomura.add(File("game.doc", size: 400));
+    tomura.add(File("junk.mail", size: 500));
+    rootdir.printList();
+}
+
+
+
+
+
+
