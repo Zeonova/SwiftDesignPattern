@@ -19,6 +19,7 @@
 		7243AA452199645800017CAA /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243AA442199645800017CAA /* Bridge.swift */; };
 		7243AA472199779700017CAA /* Strategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243AA462199779700017CAA /* Strategy.swift */; };
 		7243AA492199B62700017CAA /* Composite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243AA482199B62700017CAA /* Composite.swift */; };
+		7243AA4B219B238700017CAA /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243AA4A219B238700017CAA /* Decorator.swift */; };
 		72A7468221861828009B3094 /* SingletonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A7468121861828009B3094 /* SingletonClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		7243AA442199645800017CAA /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
 		7243AA462199779700017CAA /* Strategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strategy.swift; sourceTree = "<group>"; };
 		7243AA482199B62700017CAA /* Composite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composite.swift; sourceTree = "<group>"; };
+		7243AA4A219B238700017CAA /* Decorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
 		72A7468121861828009B3094 /* SingletonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 				7243AA38219327EF00017CAA /* Adapter.swift */,
 				7243AA442199645800017CAA /* Bridge.swift */,
 				7243AA482199B62700017CAA /* Composite.swift */,
+				7243AA4A219B238700017CAA /* Decorator.swift */,
 			);
 			path = StructuralPattern;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				72A7468221861828009B3094 /* SingletonClass.swift in Sources */,
 				7243AA4021972F6F00017CAA /* TemplateMethod.swift in Sources */,
 				7243AA39219327EF00017CAA /* Adapter.swift in Sources */,
+				7243AA4B219B238700017CAA /* Decorator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

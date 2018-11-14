@@ -220,7 +220,24 @@ func compositeTest() {
     rootdir.printList();
 }
 
-
+func decoratorTest() {
+    let b1 = StringDisplay("hello world")
+    let b2 = SideBorder(b1, ch: "#")
+    let b3 = FullBorder(b2)
+    
+    b1.show()
+    b2.show()
+    b3.show()
+    
+    
+    
+    let b4 = SideBorder(FullBorder(SideBorder(FullBorder(StringDisplay("wtf")), ch: "*")), ch: "-")
+    b4.show()
+    
+    // 链式调用
+    let b5 = StringDisplay("nice").fullBorder().sideBorder(ch: "*").sideBorder(ch: "-")
+    b5.show()
+}
 
 
 
