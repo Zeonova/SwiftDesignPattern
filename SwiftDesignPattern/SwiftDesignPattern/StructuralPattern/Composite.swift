@@ -87,4 +87,7 @@ class Directory: Entry {
             nameSet.insert(entry.getName())
         }
     }
+    func getDirectory() -> [Entry] {
+        return directory
+    }
 }
