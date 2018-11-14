@@ -45,5 +45,9 @@
 		* 基于swift.extension 基本可以不需要在修改复合模式代码的情况下就可以完成访问者模式的实现
 		* 唯一一处修改是因为没有预留获取Directory类的私有数组的函数
 		* 思考:在使用私有修饰变量时,一定要考虑是否要预留对外只读函数
+		* swift.extension 是对开闭原则OCP的更好的支持
+		* ```element.accept(visitor)```
+		* ```visitor.visit(element)```
+		* 这种由双方共同决定实际处理的分发方式一般被称为双重分发
 		
 > 
