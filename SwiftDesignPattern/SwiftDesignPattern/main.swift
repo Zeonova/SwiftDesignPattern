@@ -273,3 +273,16 @@ func visitorTest() {
 }
 
 
+func chainOfResponsibilityTest() {
+    let alice = NoSupport("Alice")
+    let bob = LimitSupport("Bob", limit: 100)
+    let charlie = SpecialSupport("Charlie", n: 429)
+    let diana = LimitSupport("Diana", limit: 200)
+    let elmo = Oddsupport("Elmo")
+    let fred = LimitSupport("Fred", limit: 300)
+    
+    _ = alice.setNext(next: bob).setNext(next: charlie).setNext(next: diana).setNext(next: elmo).setNext(next: fred)
+    for i in stride(from: 0, to: 500, by: 33) {
+        alice.support(t: Trouble(i))
+    }
+}

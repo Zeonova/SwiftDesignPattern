@@ -25,6 +25,7 @@
 		* 模版方法 - TemplateMethod
 		* 策略 - Strategy
 		* 访问者 - Visitor
+		* 责任链 - ChainOfResponsibility
 *  **需要注意的地方**
 	*  Bug:SR-103
 		*  在抽象工厂模式中,使用 protocol.extension 实现抽象类可选方法时,使用中会出现Bug,目前只能通过显式的声明在一级遵守协议类中,才可以在子类中正确的重写,或者弃用protocol.extension方式,通过typealias进行组合实现
@@ -49,5 +50,9 @@
 		* ```element.accept(visitor)```
 		* ```visitor.visit(element)```
 		* 这种由双方共同决定实际处理的分发方式一般被称为双重分发
+	* 实践中发现的一些有趣的写法
+		* ```for (int i = 0; i < 500; i += 33)``` 
+		* ```for i in stride(from: 0, to: 500, by: 33) {}``` swift
+		
 		
 > 
