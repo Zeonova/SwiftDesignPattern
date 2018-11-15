@@ -314,4 +314,30 @@ func observerTest() {
     
     
 }
-observerTest()
+
+
+func mementoTest() {
+    let gamer = Gamer(100)
+    var memento = gamer.createMemento()
+    for i in 0..<100 {
+        print("====== \(i)")
+        print("当前状态:\(gamer)")
+        gamer.bet()
+        
+        print("所持金钱为\(gamer.money)元。")
+        
+        // 决定如何处理Memento
+        if gamer.money > memento.getMoney() {
+            print("所持金钱增加了许多,因此保存当前的状态")
+            memento = gamer.createMemento()
+        }else if gamer.money < memento.getMoney() / 2 {
+            print("所持金钱减少了许多,因此将恢复到以前的状态")
+            print(memento)
+            gamer.restoreMemento(memento: memento)
+        }
+        Thread.sleep(forTimeInterval: 5)
+    }
+}
+
+mementoTest()
+
