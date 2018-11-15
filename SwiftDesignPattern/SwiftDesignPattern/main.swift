@@ -307,7 +307,11 @@ func observerTest() {
     let observer2 = GraphObserver()
     generator.addObserver(ob: observer1)
     generator.addObserver(ob: observer2)
+    
+    generator.deleteObserver(ob: observer1)
+
     generator.execute()
+    
     
 }
 observerTest()

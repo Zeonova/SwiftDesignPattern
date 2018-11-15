@@ -25,11 +25,7 @@ class NumberGeneratorClass {
         observers.append(ob)
     }
     func deleteObserver(ob:Observer) {
-        for  i in 0..<observers.count {
-            if observers[i] == ob {
-                observers.remove(at: i)
-            }
-        }
+        observers = observers.filter {!($0 == ob)}
     }
     func notifyObservers() {
         for item in observers {
