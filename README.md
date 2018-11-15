@@ -19,7 +19,8 @@
 		* 适配器 - Adapter
 		* 桥接 - Bridge 
 		* 复合模式 ~~组合模式~~ - Composite
-		* 装饰器 - Decorator 
+		* 装饰器 - Decorator
+		* 外观模式 - Facade
 	* 行为型
 		* 迭代器 - Iterator
 		* 模版方法 - TemplateMethod

@@ -286,3 +286,8 @@ func chainOfResponsibilityTest() {
         alice.support(t: Trouble(i))
     }
 }
+
+
+func facadeTest(){
+    _ = PageMaker.makeWelcomePage(mailaddr: "hyuki@hyuki.com", fileName: "nothing")
+}
