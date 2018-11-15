@@ -291,3 +291,14 @@ func chainOfResponsibilityTest() {
 func facadeTest(){
     _ = PageMaker.makeWelcomePage(mailaddr: "hyuki@hyuki.com", fileName: "nothing")
 }
+
+
+func mediatorTest() {
+    // 模拟操作在text长度为偶数,一致调整A,B的类的state属性
+    let a = ConcreteMediator()
+    for i in stride(from: 0, to: 500, by: 33) {
+        a.inputText(n: i)
+    }
+}
+
+mediatorTest()
