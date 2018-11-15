@@ -301,4 +301,13 @@ func mediatorTest() {
     }
 }
 
-mediatorTest()
+func observerTest() {
+    let generator = RandomNumberGenerator()
+    let observer1 = DigitObserver()
+    let observer2 = GraphObserver()
+    generator.addObserver(ob: observer1)
+    generator.addObserver(ob: observer2)
+    generator.execute()
+    
+}
+observerTest()
