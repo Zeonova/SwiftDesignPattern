@@ -13,6 +13,8 @@
 		721DDE7C2184810300F64772 /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721DDE7B2184810300F64772 /* AbstractFactory.swift */; };
 		721DDE7E2186044600F64772 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721DDE7D2186044600F64772 /* Builder.swift */; };
 		72277864219EEB6F00DA2233 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72277863219EEB6F00DA2233 /* State.swift */; };
+		72277868219F30F600DA2233 /* Flyweight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72277867219F30F600DA2233 /* Flyweight.swift */; };
+		72277882219F370100DA2233 /* FlyweightFile in CopyFiles */ = {isa = PBXBuildFile; fileRef = 72277881219F35F100DA2233 /* FlyweightFile */; };
 		7243AA39219327EF00017CAA /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243AA38219327EF00017CAA /* Adapter.swift */; };
 		7243AA3E21971B3A00017CAA /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243AA3D21971B3A00017CAA /* Iterator.swift */; };
 		7243AA4021972F6F00017CAA /* TemplateMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243AA3F21972F6F00017CAA /* TemplateMethod.swift */; };
@@ -34,9 +36,10 @@
 		721DDE6B2183504B00F64772 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = usr/share/man/man1;
+			dstSubfolderSpec = 7;
 			files = (
+				72277882219F370100DA2233 /* FlyweightFile in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -50,6 +53,8 @@
 		721DDE7B2184810300F64772 /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		721DDE7D2186044600F64772 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		72277863219EEB6F00DA2233 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		72277867219F30F600DA2233 /* Flyweight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flyweight.swift; sourceTree = "<group>"; };
+		72277881219F35F100DA2233 /* FlyweightFile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FlyweightFile; sourceTree = "<group>"; };
 		7243AA38219327EF00017CAA /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		7243AA3D21971B3A00017CAA /* Iterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
 		7243AA3F21972F6F00017CAA /* TemplateMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMethod.swift; sourceTree = "<group>"; };
@@ -98,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				721DDE702183504B00F64772 /* main.swift */,
+				72277881219F35F100DA2233 /* FlyweightFile */,
 				7243AA3A2195643900017CAA /* CreationalPattern */,
 				7243AA3B219564E600017CAA /* StructuralPattern */,
 				7243AA3C21971AF700017CAA /* BehavioralPattern */,
@@ -126,6 +132,7 @@
 				7243AA482199B62700017CAA /* Composite.swift */,
 				7243AA4A219B238700017CAA /* Decorator.swift */,
 				7243AA50219D458500017CAA /* Facade.swift */,
+				72277867219F30F600DA2233 /* Flyweight.swift */,
 			);
 			path = StructuralPattern;
 			sourceTree = "<group>";
@@ -226,6 +233,7 @@
 				7243AA472199779700017CAA /* Strategy.swift in Sources */,
 				72A7468221861828009B3094 /* SingletonClass.swift in Sources */,
 				7243AA51219D458500017CAA /* Facade.swift in Sources */,
+				72277868219F30F600DA2233 /* Flyweight.swift in Sources */,
 				7243AA4021972F6F00017CAA /* TemplateMethod.swift in Sources */,
 				7243AA39219327EF00017CAA /* Adapter.swift in Sources */,
 				7243AA4D219C3D4300017CAA /* Visitor.swift in Sources */,

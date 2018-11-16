@@ -351,3 +351,14 @@ func stateTest() {
     }
 }
 
+
+
+func flyweightTest(){
+    print("输入数字字符串 0到9 和 -")
+    let text = readLine(strippingNewline: true)
+    if let t = text {
+        let bigText = BigString(t)
+        bigText.printBigString()
+    }
+}
+
