@@ -30,6 +30,7 @@
 		* 中介者 - Mediator ~~残次实现~~
 		* 观察者 - Observer
 		* 备忘录 - Memento
+		* 状态 - State
 *  **需要注意的地方**
 	*  Bug:SR-103
 		*  在抽象工厂模式中,使用 protocol.extension 实现抽象类可选方法时,使用中会出现Bug,目前只能通过显式的声明在一级遵守协议类中,才可以在子类中正确的重写,或者弃用protocol.extension方式,通过typealias进行组合实现

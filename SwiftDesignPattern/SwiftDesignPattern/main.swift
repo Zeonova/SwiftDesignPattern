@@ -315,7 +315,6 @@ func observerTest() {
     
 }
 
-
 func mementoTest() {
     let gamer = Gamer(100)
     var memento = gamer.createMemento()
@@ -339,5 +338,16 @@ func mementoTest() {
     }
 }
 
-mementoTest()
+
+
+func stateTest() {
+    let cop = RoboCop.sharedInstance
+    for i in 1..<100 {
+        print("\(i) day")
+        cop.setTager(id: Int.random(in: 2..<216))
+        cop.begin()
+        print("")
+        Thread.sleep(forTimeInterval: 10)
+    }
+}
 
