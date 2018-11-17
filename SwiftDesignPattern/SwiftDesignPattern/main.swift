@@ -361,4 +361,14 @@ func flyweightTest(){
         bigText.printBigString()
     }
 }
-
+func proxyTest()  {
+    let p = PrinterProxy("Alice")
+    print("现在的名字是:\(p.printerName)")
+    p.printerName = "Bob"
+    print("现在的名字是:\(p.printerName)")
+    p.startPrint(text: "Hello, world.")
+}
+func delegateTest() {
+    // main内模拟App运行
+    let _ = AppView().viewDidAppear()
+}

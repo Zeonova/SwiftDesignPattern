@@ -6,12 +6,8 @@
 //  Copyright © 2018年 Mr.Z. All rights reserved.
 // print(class_getSuperclass(type(of: a)) as Any)
 // SwiftObject
-// 结构型模式(Structural Pattern)描述如何将类或者对 象结合在一起形成更大的结构，
-// 就像搭积木，可以通过 简单积木的组合形成复杂的、功能更为强大的结构。
 
-
-
-// 适配器模式,与委托模式很像，但是实现的方向和功能不一样，适配器以包装目标接口成为指定的接口的形式，委托则是将这些功能的实现转交其他类
+// 适配器模式，适配器以包装目标接口成为指定的接口的形式
 // 角色： 抽象目标/适配器/被适配者
 
 import Foundation

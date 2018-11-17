@@ -15,6 +15,8 @@
 		72277864219EEB6F00DA2233 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72277863219EEB6F00DA2233 /* State.swift */; };
 		72277868219F30F600DA2233 /* Flyweight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72277867219F30F600DA2233 /* Flyweight.swift */; };
 		72277882219F370100DA2233 /* FlyweightFile in CopyFiles */ = {isa = PBXBuildFile; fileRef = 72277881219F35F100DA2233 /* FlyweightFile */; };
+		72277884219F488E00DA2233 /* Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72277883219F488E00DA2233 /* Proxy.swift */; };
+		7227788621A086AB00DA2233 /* Delegate(Bridge).swift in Sources */ = {isa = PBXBuildFile; fileRef = 7227788521A086AB00DA2233 /* Delegate(Bridge).swift */; };
 		7243AA39219327EF00017CAA /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243AA38219327EF00017CAA /* Adapter.swift */; };
 		7243AA3E21971B3A00017CAA /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243AA3D21971B3A00017CAA /* Iterator.swift */; };
 		7243AA4021972F6F00017CAA /* TemplateMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243AA3F21972F6F00017CAA /* TemplateMethod.swift */; };
@@ -55,6 +57,8 @@
 		72277863219EEB6F00DA2233 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		72277867219F30F600DA2233 /* Flyweight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flyweight.swift; sourceTree = "<group>"; };
 		72277881219F35F100DA2233 /* FlyweightFile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FlyweightFile; sourceTree = "<group>"; };
+		72277883219F488E00DA2233 /* Proxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proxy.swift; sourceTree = "<group>"; };
+		7227788521A086AB00DA2233 /* Delegate(Bridge).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Delegate(Bridge).swift"; sourceTree = "<group>"; };
 		7243AA38219327EF00017CAA /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		7243AA3D21971B3A00017CAA /* Iterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
 		7243AA3F21972F6F00017CAA /* TemplateMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMethod.swift; sourceTree = "<group>"; };
@@ -129,10 +133,12 @@
 			children = (
 				7243AA38219327EF00017CAA /* Adapter.swift */,
 				7243AA442199645800017CAA /* Bridge.swift */,
+				7227788521A086AB00DA2233 /* Delegate(Bridge).swift */,
 				7243AA482199B62700017CAA /* Composite.swift */,
 				7243AA4A219B238700017CAA /* Decorator.swift */,
 				7243AA50219D458500017CAA /* Facade.swift */,
 				72277867219F30F600DA2233 /* Flyweight.swift */,
+				72277883219F488E00DA2233 /* Proxy.swift */,
 			);
 			path = StructuralPattern;
 			sourceTree = "<group>";
@@ -222,6 +228,7 @@
 				721DDE7C2184810300F64772 /* AbstractFactory.swift in Sources */,
 				7243AA452199645800017CAA /* Bridge.swift in Sources */,
 				721DDE7821845AB400F64772 /* Prototype.swift in Sources */,
+				72277884219F488E00DA2233 /* Proxy.swift in Sources */,
 				721DDE7A21846B3A00F64772 /* Factory.swift in Sources */,
 				72277864219EEB6F00DA2233 /* State.swift in Sources */,
 				7243AA3E21971B3A00017CAA /* Iterator.swift in Sources */,
@@ -229,6 +236,7 @@
 				7243AA492199B62700017CAA /* Composite.swift in Sources */,
 				721DDE712183504B00F64772 /* main.swift in Sources */,
 				7243AA57219DB8C400017CAA /* Observer.swift in Sources */,
+				7227788621A086AB00DA2233 /* Delegate(Bridge).swift in Sources */,
 				721DDE7E2186044600F64772 /* Builder.swift in Sources */,
 				7243AA472199779700017CAA /* Strategy.swift in Sources */,
 				72A7468221861828009B3094 /* SingletonClass.swift in Sources */,
