@@ -78,8 +78,7 @@
 	* 关于代理模式 Proxy 和 委托模式 Delegate
 		*  开发常用的Delegate委托模式,很多人都根据出现的 delegate 称为代理模式,并且和真正的Proxy模式来比较
 		*  其实,所谓的委托模式并不是设计模式中的代理模式Proxy,而是桥接模式的变种实现
-		*  桥接模式的作用是将 类的功能层次结构(UITableView) 和类的实现层次结构(class:UITableViewDelegate) 连接起来
-		*  而且,delegate 这个词的含义是授权, 即UITableView授权UITableViewDelegate实现
+		*  而且,delegate 是表示UITableView授权UITableViewDelegate实现
 		*  Proxy 则表示全权代理,在程序中的表现为 具有一致性
 		*  所以,Delegate的模式可以叫委托模式,或者授权模式,但是不能称为代理模式,因为有一个真正的代理模式
 
