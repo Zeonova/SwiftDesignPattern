@@ -17,6 +17,8 @@
 		72277882219F370100DA2233 /* FlyweightFile in CopyFiles */ = {isa = PBXBuildFile; fileRef = 72277881219F35F100DA2233 /* FlyweightFile */; };
 		72277884219F488E00DA2233 /* Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72277883219F488E00DA2233 /* Proxy.swift */; };
 		7227788621A086AB00DA2233 /* Delegate(Bridge).swift in Sources */ = {isa = PBXBuildFile; fileRef = 7227788521A086AB00DA2233 /* Delegate(Bridge).swift */; };
+		72309F0521A16D520095AB23 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72309F0421A16D520095AB23 /* Command.swift */; };
+		72309F0721A187DF0095AB23 /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72309F0621A187DF0095AB23 /* Interpreter.swift */; };
 		7243AA39219327EF00017CAA /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243AA38219327EF00017CAA /* Adapter.swift */; };
 		7243AA3E21971B3A00017CAA /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243AA3D21971B3A00017CAA /* Iterator.swift */; };
 		7243AA4021972F6F00017CAA /* TemplateMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243AA3F21972F6F00017CAA /* TemplateMethod.swift */; };
@@ -59,6 +61,9 @@
 		72277881219F35F100DA2233 /* FlyweightFile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FlyweightFile; sourceTree = "<group>"; };
 		72277883219F488E00DA2233 /* Proxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proxy.swift; sourceTree = "<group>"; };
 		7227788521A086AB00DA2233 /* Delegate(Bridge).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Delegate(Bridge).swift"; sourceTree = "<group>"; };
+		72309F0421A16D520095AB23 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		72309F0621A187DF0095AB23 /* Interpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interpreter.swift; sourceTree = "<group>"; };
+		72309F0921A1C6D30095AB23 /* program.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = program.txt; sourceTree = "<group>"; };
 		7243AA38219327EF00017CAA /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		7243AA3D21971B3A00017CAA /* Iterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
 		7243AA3F21972F6F00017CAA /* TemplateMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMethod.swift; sourceTree = "<group>"; };
@@ -116,6 +121,14 @@
 			path = SwiftDesignPattern;
 			sourceTree = "<group>";
 		};
+		72309F0821A1C6A80095AB23 /* InterpreterFile */ = {
+			isa = PBXGroup;
+			children = (
+				72309F0921A1C6D30095AB23 /* program.txt */,
+			);
+			path = InterpreterFile;
+			sourceTree = "<group>";
+		};
 		7243AA3A2195643900017CAA /* CreationalPattern */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +168,9 @@
 				7243AA56219DB8C400017CAA /* Observer.swift */,
 				7243AA58219DD22500017CAA /* Memento.swift */,
 				72277863219EEB6F00DA2233 /* State.swift */,
+				72309F0421A16D520095AB23 /* Command.swift */,
+				72309F0621A187DF0095AB23 /* Interpreter.swift */,
+				72309F0821A1C6A80095AB23 /* InterpreterFile */,
 			);
 			path = BehavioralPattern;
 			sourceTree = "<group>";
@@ -232,6 +248,7 @@
 				721DDE7A21846B3A00F64772 /* Factory.swift in Sources */,
 				72277864219EEB6F00DA2233 /* State.swift in Sources */,
 				7243AA3E21971B3A00017CAA /* Iterator.swift in Sources */,
+				72309F0521A16D520095AB23 /* Command.swift in Sources */,
 				7243AA432198A5D000017CAA /* Bug.swift in Sources */,
 				7243AA492199B62700017CAA /* Composite.swift in Sources */,
 				721DDE712183504B00F64772 /* main.swift in Sources */,
@@ -241,6 +258,7 @@
 				7243AA472199779700017CAA /* Strategy.swift in Sources */,
 				72A7468221861828009B3094 /* SingletonClass.swift in Sources */,
 				7243AA51219D458500017CAA /* Facade.swift in Sources */,
+				72309F0721A187DF0095AB23 /* Interpreter.swift in Sources */,
 				72277868219F30F600DA2233 /* Flyweight.swift in Sources */,
 				7243AA4021972F6F00017CAA /* TemplateMethod.swift in Sources */,
 				7243AA39219327EF00017CAA /* Adapter.swift in Sources */,

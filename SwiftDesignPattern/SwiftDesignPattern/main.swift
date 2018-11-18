@@ -372,3 +372,47 @@ func delegateTest() {
     // main内模拟App运行
     let _ = AppView().viewDidAppear()
 }
+func commandText() {
+    let history = MacroCommand()
+    for i in 0..<10 {
+        let log = CommandExecuter()
+        let command = PrintCommand(log, text: "HELLO,NO.\(i)")
+        history.add(cmd: command)
+    }
+    
+    
+    history.execute()
+    
+    history.undo()
+    history.undo()
+    history.undo()
+    
+    history.add(cmd: PrintCommand(CommandExecuter(),text: "Hello, world!"))
+    history.execute()
+    
+    history.clear()
+    history.add(cmd: PrintCommand(CommandExecuter(),text: "new world!"))
+    history.execute()
+
+}
+
+
+func interpreterTest() {
+    let file = "BehavioralPattern/InterpreterFile/program.txt"
+    let path=URL(fileURLWithPath: file)
+    let text=try! String(contentsOf: path)
+
+    let texts = text.split(separator: "\n")
+    for item in texts {
+        print("===================")
+        print("开始解释:\(item)")
+        let node = ProgramNode()
+        node.parse(context: Context(String(item)))
+        print("解释结束")
+        print("===================")
+    }
+ 
+    
+}
+
+interpreterTest()
