@@ -20,7 +20,7 @@
 	* 结构型
 		* 适配器 - Adapter
 		* 桥接 - Bridge 
-		* ~~委托 - Delegate(Bridge) 桥接模式的变种实现~~
+		* ~~委托 - Delegate(Bridge) 桥接模式的变种实现 JAVASpring经常提到的依赖注入也是桥接模式~~
 		* 复合 ~~组合模式~~ - Composite
 		* 装饰器 - Decorator
 		* 外观 - Facade
